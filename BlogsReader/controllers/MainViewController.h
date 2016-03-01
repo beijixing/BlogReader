@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MianViewController : UIViewController
+@interface MainViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITableView *blogList;
 
 @end
