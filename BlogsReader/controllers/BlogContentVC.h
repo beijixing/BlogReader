@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
+@interface BlogContentVC : BaseViewController
 
-@interface ViewController : UIViewController
-
-
+@property (nonatomic, copy) NSString *netAddress;
 @end
 

@@ -7,10 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
+@class BlogInfoModel;
+@protocol InputBlogInfoDelegate <NSObject>
 
-@interface InputBlogInfoVC : UIViewController
+- (void)addBlogIfo:(BlogInfoModel *)blogInfo;
+
+@end
+
+@interface InputBlogInfoVC : BaseViewController
 @property (weak, nonatomic) IBOutlet UITextField *blogNameTF;
-
 @property (weak, nonatomic) IBOutlet UITextField *blogAddressTF;
+@property (assign, nonatomic) id<InputBlogInfoDelegate> delegate;
 - (IBAction)addButtonClicked:(UIButton *)sender;
 @end

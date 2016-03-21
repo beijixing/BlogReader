@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface MainViewController : UIViewController
+#import "BaseViewController.h"
+@interface MainViewController : BaseViewController
 @property (weak, nonatomic) IBOutlet UITableView *blogList;
 
 @end

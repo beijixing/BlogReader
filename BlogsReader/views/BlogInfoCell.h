@@ -11,6 +11,5 @@
 @interface BlogInfoCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *nameLB;
 @property (weak, nonatomic) IBOutlet UILabel *netAddressLB;
-
 @property (weak, nonatomic) IBOutlet UILabel *addTimeLB;
 @end
